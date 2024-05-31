@@ -1,0 +1,193 @@
+.jet_info_container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0.5fr 1.25fr 1.25fr;
+    justify-items: center;
+    align-items: center;
+    margin-top: 350px;
+    background-color: $white_color;
+
+    &_title {
+        @extend .title_style;
+    }
+
+    .private_jet {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 40px;
+
+
+        &_img_box {
+            width: 400px;
+            height: 523px;
+            background-color: $second_accent_color;
+            border-radius: 0 50px 50px 0;
+            align-self: center;
+            position: relative;
+
+            & img {
+                position: absolute;
+                top: 12%;
+                left: 30%;
+            }
+        }
+
+        &_text_box {
+            display: grid;
+            grid-template-rows: 0.5fr 1.5fr;
+            align-self: center;
+            margin-right: 80px;
+
+            &_title {
+                font-size: $titles_fz;
+                font-weight: 600;
+                justify-self: flex-start;
+            }
+
+            &_desc {
+                color: $desc_color;
+                font-weight: 400;
+                letter-spacing: 0.02em;
+                text-align: justify;
+            }
+        }
+
+    }
+
+    .business_jet {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 40px;
+        background-color: $white_color;
+        position: relative;
+        z-index: 3;
+
+        &_text_box {
+            display: grid;
+            grid-template-rows: 0.5fr 1.5fr;
+            align-self: center;
+            margin-left: 80px;
+
+            &_title {
+                font-size: $titles_fz;
+                font-weight: 600;
+                justify-self: flex-start;
+            }
+
+            &_desc {
+                color: $desc_color;
+                font-weight: 400;
+                letter-spacing: 0.02em;
+                text-align: justify;
+            }
+        }
+
+        &_img_box {
+            width: 400px;
+            height: 523px;
+            border-radius: 50px 0 0 50px;
+            background-color: $second_accent_color;
+            align-self: center;
+            justify-self: end;
+            position: relative;
+
+            & img {
+                position: absolute;
+                top: 12%;
+                right: 30%;
+
+            }
+
+        }
+    }
+
+    .private_jet_mobile {
+        display: none;
+    }
+}
+
+
+@media (min-width: 960px) and (max-width: 1199px) {
+    .jet_info_container {
+        grid-template-rows: 0.2fr 1fr 1fr;
+        margin-top: 300px;
+
+        .jet_info_container_title {
+            align-self: flex-end;
+        }
+
+        .private_jet {
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 0.5fr;
+            gap: 0;
+
+            &_text_box {
+                width: 60%;
+                justify-self: end;
+                align-self: flex-start;
+                margin-top: 15px;
+            }
+        }
+
+        .private_jet_img_box {
+            width: 460px;
+
+            & img {
+                left: 40%
+            }
+        }
+
+        .business_jet {
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 0.5fr;
+            gap: 0;
+        }
+
+        .business_jet_text_box {
+            order: 2;
+            width: 60%;
+            justify-self: end;
+            align-self: flex-start;
+            margin-top: 15px;
+            margin-right: 80px;
+        }
+
+        .business_jet_img_box {
+            order: 1;
+            transform: scale(-1, 1);
+            right: 62%;
+            width: 460px;
+
+
+            & img {
+                right: 40%;
+            }
+        }
+    }
+
+
+
+}
+
+@media (max-width: 959px) {
+    .jet_info_container {
+        display: none;
+    }
+
+    // .jet_info_container_title {
+    //     font-size: 24px;
+    //     text-align: center;
+    // }
+
+    // .private_jet_img_box {
+    //     display: none;
+    // }
+
+    // .private_jet_mobile {
+    //     display: flex;
+    // }
+
+
+}

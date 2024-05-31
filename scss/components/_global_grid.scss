@@ -1,0 +1,16 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: minmax(1000px, auto) minmax(auto, 5fr) minmax(170px, auto);
+    overflow-x: hidden;
+    color: $main_text_color;
+    font-family: $main_font_family;
+    background-color: $white_color;
+    font-size: $main_text_fz;
+
+}
+
+main {
+    width: 100vw;
+}

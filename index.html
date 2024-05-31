@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <section class="landing_page">
+      <header class="header">
+        <img class="header_logo" src="./img/icon/Logo.svg" alt="" />
+        <ul class="header_nav">
+          <li class="header_nav_item"><a href="#">Home</a></li>
+          <li class="header_nav_item"><a href="#">Booking</a></li>
+          <li class="header_nav_item"><a href="#">Private Jet</a></li>
+          <li class="header_nav_item"><a href="#">Specification</a></li>
+          <li class="header_nav_item"><a href="#">Luxury Charters</a></li>
+          <li class="header_nav_item"><a href="#">Membership</a></li>
+        </ul>
+        <div class="header_btn">
+          <a class="register_btn" href="">Register</a>
+          <a class="sign_in_btn" href="">Sign In</a>
+        </div>
+        <div class="header_burger_menu">
+          <img tabindex="1" class="burger_icon" src="./img/icon/menu.svg" alt="">
+          <div class="burger_nav">
+            <ul class="burger_nav_list">
+              <li class="burger_nav_item"><a href="#">Home</a></li>
+              <li class="burger_nav_item"><a href="#">Booking</a></li>
+              <li class="burger_nav_item"><a href="#">Private Jet</a></li>
+              <li class="burger_nav_item"><a href="#">Specification</a></li>
+              <li class="burger_nav_item"><a href="#">Luxury Charters</a></li>
+              <li class="burger_nav_item"><a href="#">Membership</a></li>
+            </ul>
+            <div class="burger_menu_btn">
+              <a class="burger_register_btn" href="">Register</a>
+              <a class="burger_sign_in_btn" href="">Sign In</a>
+            </div>
+          </div>
+        </div>
+        
+      </header>
+      <section class="landing_page_content">
+        <div class="landing_page_text_box_cover">
+          <div class="ladning_page_text_box">
+            <p class="landing_page_headline">
+              Enjoy <span>Reserved</span> <br />
+              Overhead bin space
+            </p>
+            <div class="landing_page_btn">
+              <a href="#">Explore Now</a>
+              <svg>
+                <use
+                  href="./img/icon/icomoon (1)/symbol-defs.svg#icon-arrow-right2"
+                ></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="landing_page_window_box">
+          <div class="landing_page_window_cover"></div>
+          <div class="landing_page_window"></div>
+        </div>
+        </div>
+        <img src="./img/pngwing.com-2.png" alt="clouds" class="clouds">
+        <div class="landing_page_btn_mobile">
+          <a href="" >
+            Book now
+          </a>
+          <svg>
+            <use href="./img/icon/icomoon (1)/symbol-defs.svg#icon-arrow-right2"></use>
+          </svg>
+        </div>
+        
+      </section>
+      <section class="booking_form_container">
+        <ul class="booking_form_list">
+          <li>
+            <a href="#">Round Trip</a>
+            
+          </li>
+          <li><a href="#">Flight Type</a></li>
+          <li><a href="#">Person</a></li>
+        </ul>
+        <form action="" class="booking_form"> 
+          <input type="text" name="destination" id="destination" list="nameofairport" placeholder="From" required>
+          <datalist id="nameofairport">
+            <option value="Kyiv (KBP)">Boryspil International Airport</option>
+            <option value="Paris (CDG)">Charles de Gaulle Airport </option>
+            <option value="London (LHR/EGLL)">Heathrow Airport</option>
+            <option value="Istanbul (IST)">Istanbul Airport</option>
+            <option value="Venice (VCE)">Venice Marco Polo Airport</option>
+          </datalist>
+          <input type="text" name="destination" id="destination" list="nameofairport" placeholder="To" required/>
+          <datalist id="nameofairport">
+            <option value="Kyiv (KBP)">Boryspil International Airport</option>
+            <option value="Paris (CDG)">Charles de Gaulle Airport </option>
+            <option value="London (LHR/EGLL)">Heathrow Airport</option>
+            <option value="Istanbul (IST)">Istanbul Airport</option>
+            <option value="Venice (VCE)">Venice Marco Polo Airport</option>
+          </datalist>
+          <div class="booking_form_calendar">
+            <div class="flight_date depature_date">
+              <p class="flight_date_title">Depature</p>
+              <p class="flight_date_picked">Tue 16 July</p>
+              <div class="flight_date_btn">
+                <a href="#">Prev</a>
+                <a href="#">Next</a>
+              </div>
+            </div>
+            <img tabindex="0" class="calendar_icon" src="./img/icon/calendar 1.svg" alt="calendar icon">
+            <div class="calendar">
+              <div class="calendar__opts">
+                <select name="calendar__month" id="calendar__month">
+                  <option>Jan</option>
+                  <option>Feb</option>
+                  <option>Mar</option>
+                  <option>Apr</option>
+                  <option>May</option>
+                  <option>Jun</option>
+                  <option selected>Jul</option>
+                  <option>Aug</option>
+                  <option>Sep</option>
+                  <option>Oct</option>
+                  <option>Nov</option>
+                  <option>Dec</option>
+                </select>
+            
+                <select name="calendar__year" id="calendar__year">
+                  <option selected>2024</option>
+                  <option>2025</option>
+                  <option>2026</option>
+                  <option>2027</option>
+                </select>
+              </div>
+              <div class="calendar__body">
+                <div class="calendar__days">
+                  <div>M</div>
+                  <div>T</div>
+                  <div>W</div>
+                  <div>T</div>
+                  <div>F</div>
+                  <div>S</div>
+                  <div>S</div>
+                </div>
+                <div class="calendar__dates">
+                  <div class="calendar__date"><span>1</span></div>
+                  <div class="calendar__date"><span>2</span></div>
+                  <div class="calendar__date"><span>3</span></div>
+                  <div class="calendar__date"><span>4</span></div>
+                  <div class="calendar__date"><span>5</span></div>
+                  <div class="calendar__date"><span>6</span></div>
+                  <div class="calendar__date"><span>7</span></div>
+                  <div class="calendar__date"><span>8</span></div>
+                  <div class="calendar__date"><span>9</span></div>
+                  <div class="calendar__date"><span>10</span></div>
+                  <div class="calendar__date"><span>11</span></div>
+                  <div class="calendar__date"><span>12</span></div>
+                  <div class="calendar__date"><span>13</span></div>
+                  <div class="calendar__date"><span>14</span></div>
+                  <div class="calendar__date"><span>15</span></div>
+                  <div class="calendar__date calendar__date--selected calendar__date--first-date calendar__date--range-start"><span>16</span></div>
+                  <div class="calendar__date calendar__date--selected"><span>17</span></div>
+                  <div class="calendar__date calendar__date--selected"><span>18</span></div>
+                  <div class="calendar__date calendar__date--selected"><span>19</span></div>
+                  <div class="calendar__date calendar__date--selected"><span>20</span></div>
+                  <div class="calendar__date calendar__date--selected calendar__date--last-date calendar__date--range-end "><span>21</span></div>
+                  <div class="calendar__date"><span>22</span></div>
+                  <div class="calendar__date"><span>23</span></div>
+                  <div class="calendar__date"><span>24</span></div>
+                  <div class="calendar__date"><span>25</span></div>
+                  <div class="calendar__date"><span>26</span></div>
+                  <div class="calendar__date"><span>27</span></div>
+                  <div class="calendar__date"><span>28</span></div>
+                  <div class="calendar__date"><span>29</span></div>
+                  <div class="calendar__date"><span>30</span></div>
+                  <div class="calendar__date"><span>31</span></div>
+                  <div class="calendar__date calendar__date--grey"><span>1</span></div>
+                  <div class="calendar__date calendar__date--grey"><span>2</span></div>
+                  <div class="calendar__date calendar__date--grey"><span>3</span></div>
+                  <div class="calendar__date calendar__date--grey"><span>4</span></div>
+                </div>
+              </div>
+            
+              <div class="calendar__buttons">
+                <button class="calendar__button calendar__button--grey">Back</button>
+            
+                <button class="calendar__button calendar__button--primary">Apply</button>
+              </div>
+            </div>
+            <div class="flight_date">
+              <p class="flight_date_title">Return</p>
+              <p class="flight_date_picked">Sun 21 July</p>
+              <div class="flight_date_btn">
+                <a href="#">Prev</a>
+                <a href="#">Next</a>
+              </div>
+            </div>      
+          </div>
+            
+          <button class="booking_form_submit_btn" type="submit">
+            Book Flight
+            <svg>
+              <use
+                href="./img/icon/icomoon (1)/symbol-defs.svg#icon-arrow-right2"
+              ></use>
+            </svg>
+        </button>
+      </form>
+      <a class="requirements_btn" href="#">Add Requirements</a>
+      </section>
+    </section>
+    <main>
+      
+      <section class="jet_info_container">
+        <p class="jet_info_container_title">
+          Private Jet for Business & Leisure Purposes
+        </p>
+        <div class="private_jet">
+          <div class="private_jet_img_box">
+            <img src="./img/1.png" alt="plane" />
+          </div>
+          <div class="private_jet_text_box">
+            <p class="private_jet_text_box_title">Private Jet Charter</p>
+            <p class="private_jet_text_box_desc">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to using 'Content here,
+              content here', making it look like readable English. Many desktop
+              publishing packages and web page editors
+            </p>
+          </div>
+        </div>
+        <div class="business_jet">
+          <div class="business_jet_text_box">
+            <p class="business_jet_text_box_title">Business Jet Charter</p>
+            <p class="business_jet_text_box_desc">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to using 'Content here,
+              content here', making it look like readable English. Many desktop
+              publishing packages and web page editors
+            </p>
+          </div>
+          <div class="business_jet_img_box">
+            <img src="./img/2.png" alt="seat in a plane" />
+          </div>
+        </div>
+      </section>
+      <section class="card_container">
+        <p class="card_container_title">
+          Private Jet Performance and Specifications
+        </p>
+        <article class="card_box">
+          <div class="card_box_item card_1">
+            <img src="./img/icon/seat (1) 1.svg" alt="seat icon" />
+            <p class="card_title">Luxury And Comfort</p>
+            <p class="card_desc">
+              It is a long established fact that a reader will be distracted by
+              the readable
+            </p>
+          </div>
+          <div class="card_box_item card_2">
+            <img
+              src="./img/icon/schedule 1.svg"
+              alt="calendar with clock icon"
+            />
+            <p class="card_title">Personal schedule & booking</p>
+            <p class="card_desc">
+              It is a long established fact that a reader will be distracted by
+              the readable
+            </p>
+          </div>
+          <div class="card_box_img_container">
+            <img class="card_box_img" src="./img/plane-1-removebg-preview.png" alt="" />
+          </div>
+          <div class="card_box_item card_3">
+            <img src="./img/icon/web-browser 1.svg" alt="green check mark" />
+            <p class="card_title">Safety and security</p>
+            <p class="card_desc">
+              It is a long established fact that a reader will be distracted by
+              the readable
+            </p>
+          </div>
+          <div class="card_box_item card_4">
+            <img src="./img/icon/captain 1.svg" alt="capitan icon" />
+            <p class="card_title">Experienced crew</p>
+            <p class="card_desc">
+              It is a long established fact that a reader will be distracted by
+              the readable
+            </p>
+          </div>
+        </article>
+        <!--Slider start-->
+        <article class="card_box_slider">
+          <div class="card_box_slides">
+            <input type="radio" name="cb_r" id="cb_r1" checked />
+            <input type="radio" name="cb_r" id="cb_r2" />
+            <input type="radio" name="cb_r" id="cb_r3" />
+            <input type="radio" name="cb_r" id="cb_r4" />
+            <div class="card_box_item cb_slide cb_slide1">
+              <img src="./img/icon/seat (1) 1.svg" alt="seat icon" />
+              <p class="card_title">Luxury And Comfort</p>
+              <p class="card_desc">
+                It is a long established fact that a reader will be distracted by
+                the readable
+              </p>
+            </div>
+            <div class="card_box_item cb_slide cb_slide2">
+              <img
+                src="./img/icon/schedule 1.svg"
+                alt="calendar with clock icon"
+              />
+              <p class="card_title">Personal schedule & booking</p>
+              <p class="card_desc">
+                It is a long established fact that a reader will be distracted by
+                the readable
+              </p>
+            </div>
+            <div class="card_box_item cb_slide cb_slide2">
+              <img src="./img/icon/web-browser 1.svg" alt="green check mark" />
+              <p class="card_title">Safety and security</p>
+              <p class="card_desc">
+                It is a long established fact that a reader will be distracted by
+                the readable
+              </p>
+            </div>
+            <div class="card_box_item cb_slide cb_slide2">
+              <img src="./img/icon/captain 1.svg" alt="capitan icon" />
+              <p class="card_title">Experienced crew</p>
+              <p class="card_desc">
+                It is a long established fact that a reader will be distracted by
+                the readable
+              </p>
+            </div>
+          </div>
+          <div class="cb_slider_navigation">
+            <label for="cb_r1" class="cb_bar"></label>
+            <label for="cb_r2" class="cb_bar"></label>
+            <label for="cb_r3" class="cb_bar"></label>
+            <label for="cb_r4" class="cb_bar"></label>
+          </div>
+        </article>
+        <!--Slider end-->
+      </section>
+      <section class="luxury_charters_section">
+        <p class="luxury_charters_section_title">Luxury Charters</p>
+        <article class="luxury_charters_section_card_box">
+          <div class="luxury_charters_img_card">
+            <img src="./img/3.png" alt="private jet" />
+            <p class="luxury_charters_img_card_title">Piaggio P.180 Avanti</p>
+          </div>
+          <div class="luxury_charters_img_card">
+            <img src="./img/4.png" alt="private jet" />
+            <p class="luxury_charters_img_card_title">Pilatus PC-12</p>
+          </div>
+          <div class="luxury_charters_img_card">
+            <img src="./img/5.png" alt="private jet" />
+            <p class="luxury_charters_img_card_title">Piper Pa27 Aztec</p>
+          </div>
+          <div class="luxury_charters_img_card">
+            <img src="./img/6.png" alt="private jet" />
+            <p class="luxury_charters_img_card_title">Beech BE100 King Air</p>
+          </div>
+        </article>
+        <img class="card_box_background" src="./img/bg2.png" alt="" />
+      </section>
+      <section class="membership_section">
+        <p class="membership_section_title">Enjoy our membership</p>
+        <article class="membership_offer_container">
+          <div class="membership_offer_card offer_card1">
+            <p class="offer_card_title">Popular</p>
+            <p class="list_title">What You’ll Get</p>
+            <ul class="offer_desc">
+              <li class="offer_desc_item">One-time initiation fee $0</li>
+              <li class="offer_desc_item">Deposit $50k</li>
+              <li class="offer_desc_item">Pricing / rates Dynamic</li>
+              <li class="offer_desc_item">Priority fleet access Yes</li>
+              <li class="offer_desc_item">Guaranteed fleet access No</li>
+            </ul>
+            <p class="offer_price">$250/month</p>
+            <a href="" class="offer_card_btn">Choose</a>
+          </div>
+          <div class="membership_offer_card">
+            <p class="offer_card_title">Business</p>
+            <p class="list_title">What You’ll Get</p>
+            <ul class="offer_desc">
+              <li class="offer_desc_item">One-time initiation fee $0</li>
+              <li class="offer_desc_item">Deposit $50k</li>
+              <li class="offer_desc_item">Pricing / rates Dynamic</li>
+              <li class="offer_desc_item">Priority fleet access Yes</li>
+              <li class="offer_desc_item">Guaranteed fleet access No</li>
+            </ul>
+            <p class="offer_price">$480/month</p>
+            <a href="" class="offer_card_btn">Choose</a>
+          </div>
+          <div class="membership_offer_card offer_card3">
+            <p class="offer_card_title">Elite</p>
+            <p class="list_title">What You’ll Get</p>
+            <ul class="offer_desc">
+              <li class="offer_desc_item">One-time initiation fee $0</li>
+              <li class="offer_desc_item">Deposit $50k</li>
+              <li class="offer_desc_item">Pricing / rates Dynamic</li>
+              <li class="offer_desc_item">Priority fleet access Yes</li>
+              <li class="offer_desc_item">Guaranteed fleet access No</li>
+            </ul>
+            <p class="offer_price">$680/month</p>
+            <a href="" class="offer_card_btn">Choose</a>
+          </div>
+        </article>
+        <!--Slider start-->
+        <article class="offer_section_slider">
+          <div class="slides">
+            <input type="radio" name="os_r" id="os_r1" checked />
+            <input type="radio" name="os_r" id="os_r2" />
+            <input type="radio" name="os_r" id="os_r3" />
+            <div class="membership_offer_card offer_card1 offer_slide slide1">
+              <p class="offer_card_title">Popular</p>
+              <p class="list_title">What You’ll Get</p>
+              <ul class="offer_desc">
+                <li class="offer_desc_item">One-time initiation fee $0</li>
+                <li class="offer_desc_item">Deposit $50k</li>
+                <li class="offer_desc_item">Pricing / rates Dynamic</li>
+                <li class="offer_desc_item">Priority fleet access Yes</li>
+                <li class="offer_desc_item">Guaranteed fleet access No</li>
+              </ul>
+              <p class="offer_price">$250/month</p>
+              <a href="" class="offer_card_btn">Choose</a>
+            </div>
+            <div class="membership_offer_card offer_slide slide2">
+              <p class="offer_card_title">Business</p>
+              <p class="list_title">What You’ll Get</p>
+              <ul class="offer_desc">
+                <li class="offer_desc_item">One-time initiation fee $0</li>
+                <li class="offer_desc_item">Deposit $50k</li>
+                <li class="offer_desc_item">Pricing / rates Dynamic</li>
+                <li class="offer_desc_item">Priority fleet access Yes</li>
+                <li class="offer_desc_item">Guaranteed fleet access No</li>
+              </ul>
+              <p class="offer_price">$480/month</p>
+              <a href="" class="offer_card_btn">Choose</a>
+            </div>
+            <div class="membership_offer_card offer_card3 offer_slide slide3">
+              <p class="offer_card_title">Elite</p>
+              <p class="list_title">What You’ll Get</p>
+              <ul class="offer_desc">
+                <li class="offer_desc_item">One-time initiation fee $0</li>
+                <li class="offer_desc_item">Deposit $50k</li>
+                <li class="offer_desc_item">Pricing / rates Dynamic</li>
+                <li class="offer_desc_item">Priority fleet access Yes</li>
+                <li class="offer_desc_item">Guaranteed fleet access No</li>
+              </ul>
+              <p class="offer_price">$680/month</p>
+              <a href="" class="offer_card_btn">Choose</a>
+            </div>
+          </div>
+          <div class="os_slider_navigation">
+            <label for="os_r1" class="os_bar"></label>
+            <label for="os_r2" class="os_bar"></label>
+            <label for="os_r3" class="os_bar"></label>
+          </div>
+        </article>
+        <!--Slider end-->
+        <div class="final_img_box">
+          <img src="./img/7.png" alt="" />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+        <img class="footer_logo" src="./img/icon/Logo_white.svg" alt="" />
+        <div class="footer_mobile">
+          <img class="footer_logo_mobile" src="./img/icon/Logo_white.svg" alt="" />
+          <ul class="footer_social_mobile">
+            <li class="footer_social_icon">
+              <svg>
+                <use
+                  href="./img/icon/icomoon (1)/symbol-defs.svg#icon-facebook2"
+                ></use>
+              </svg>
+            </li>
+
+            <li class="footer_social_icon">
+              <svg>
+                <use
+                  href="./img/icon/icomoon (1)/symbol-defs.svg#icon-instagram"
+                ></use>
+              </svg>
+            </li>
+
+            <li class="footer_social_icon">
+              <svg>
+                <use
+                  href="./img/icon/icomoon (1)/symbol-defs.svg#icon-twitter"
+                ></use>
+              </svg>
+            </li>
+
+            <li class="footer_social_icon">
+              <svg>
+                <use
+                  href="./img/icon/icomoon (1)/symbol-defs.svg#icon-telegram"
+                ></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_content">
+          <ul class="footer_nav">
+            <li class="footer_nav_item"><a href="#">Services</a></li>
+            <li class="footer_nav_item"><a href="#">About us </a></li>
+            <li class="footer_nav_item"><a href="#">News</a></li>
+            <li class="footer_nav_item"><a href="#">Contact</a></li>
+          </ul>
+          <p class="footer_copyright">© 2021 Air. All rights reserved.</p>
+          <ul class="footer_social">
+            <li class="footer_social_icon">
+              <svg>
+                <use
+                  href="./img/icon/icomoon (1)/symbol-defs.svg#icon-facebook2"
+                ></use>
+              </svg>
+            </li>
+
+            <li class="footer_social_icon">
+              <svg>
+                <use
+                  href="./img/icon/icomoon (1)/symbol-defs.svg#icon-instagram"
+                ></use>
+              </svg>
+            </li>
+
+            <li class="footer_social_icon">
+              <svg>
+                <use
+                  href="./img/icon/icomoon (1)/symbol-defs.svg#icon-twitter"
+                ></use>
+              </svg>
+            </li>
+
+            <li class="footer_social_icon">
+              <svg>
+                <use
+                  href="./img/icon/icomoon (1)/symbol-defs.svg#icon-telegram"
+                ></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </footer>
+  </body>
+</html>

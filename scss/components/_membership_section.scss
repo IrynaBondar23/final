@@ -1,0 +1,248 @@
+.membership_section {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0.2fr 1.8fr 0.5fr;
+
+    &_title {
+        @extend .title_style;
+    }
+
+    .membership_offer_container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        justify-self: center;
+    }
+
+    .membership_offer_card {
+        padding: 40px 24px 24px 24px;
+        display: grid;
+        grid-auto-flow: row;
+        border: 1px solid $offer_card_color;
+        border-radius: 20px;
+        background-color: $offer_card_color;
+        transition: transform 0.3s ease;
+    }
+
+    .offer_card_title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 125%;
+        margin: 24px 80px 32px 24px;
+    }
+
+    .list_title {
+        font-weight: 400;
+        font-size: 22px;
+        color: #a9a9aa;
+        margin-left: 24px;
+    }
+
+    .offer_desc {
+        margin-top: 24px;
+        border-bottom: 1px dashed #a9a9aa;
+
+        &_item {
+            font-weight: 500;
+            margin-bottom: 16px;
+            margin-left: 53px;
+            position: relative;
+
+            &::before {
+                content: url(/img/icon/check-mark_b.svg);
+                position: absolute;
+                top: 15px;
+                left: -30px;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    .offer_price {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 125%;
+        // margin-left: 24px;
+        margin-top: 65px;
+        text-align: center
+    }
+
+    .offer_card_btn {
+        @extend .btn;
+        padding: 12px 100px;
+        border: 1px solid $accent_color;
+        border-radius: 12px;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 182%;
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+
+    .membership_offer_card:hover {
+        transform: translateY(-40px);
+        background-color: $accent_color;
+
+        .offer_card_title {
+            color: $white_color;
+        }
+
+        .offer_desc {
+            border-bottom: 1px dashed $white_color;
+
+            &_item {
+                color: $white_color;
+
+                &::before {
+                    content: url(/img/icon/check-mark_w.svg);
+                    position: absolute;
+                    top: 15px;
+                    left: -30px;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
+        .offer_price {
+            color: $white_color;
+        }
+
+        .offer_card_btn {
+            background-color: $white_color;
+            border: 1px solid $white_color;
+            color: $main_text_color;
+        }
+
+    }
+
+    .offer_section_slider {
+        display: none;
+    }
+
+    .final_img_box {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 1199px) {
+    .membership_section {
+        grid-template-rows: 0.2fr 2fr 0.5fr;
+        gap: 60px;
+
+        &_title {
+            margin-bottom: 0;
+        }
+
+        .membership_offer_container {
+            display: none;
+        }
+
+        .offer_section_slider {
+            width: 50%;
+            height: 95%;
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto;
+            margin-top: 20px;
+            padding-bottom: 40px;
+        }
+
+        .os_slider_navigation {
+            position: absolute;
+            top: 95%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            z-index: 4;
+        }
+
+        .os_bar {
+            width: 24px;
+            height: 24px;
+            margin: 6px;
+            cursor: pointer;
+            background-color: $accent_color;
+            opacity: 0.5;
+            border-radius: 50%;
+            transition: all 0.4s ease;
+        }
+
+        .os_bar:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        .slides input {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .slides {
+            width: 300%;
+            height: 100%;
+            display: flex;
+        }
+
+        .offer_slide {
+            width: 80%;
+            position: relative;
+            transition: all 0.6s ease;
+        }
+
+        #os_r1:checked~.slide1 {
+            transform: translate(0)
+        }
+
+        #os_r2:checked~.slide1 {
+            transform: translate(-200%);
+        }
+
+        #os_r2:checked~.slide2 {
+            transform: translate(-100%);
+        }
+
+        #os_r3:checked~.slide1 {
+            transform: translate(-300%);
+        }
+
+        #os_r3:checked~.slide2 {
+            transform: translate(-200%);
+        }
+
+        #os_r3:checked~.slide3 {
+            transform: translate(-200%);
+        }
+    }
+}
+
+@media (max-width: 959px) {
+    .membership_section {
+        display: flex;
+        flex-direction: column;
+
+        .membership_section_title {
+            font-size: 27px;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .offer_section_slider {
+            width: 80%;
+            margin-top: 0;
+        }
+
+        .final_img_box {
+            margin-top: -30px;
+        }
+
+        .final_img_box img {
+            width: 90%
+        }
+    }
+}
