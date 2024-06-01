@@ -1,6 +1,6 @@
 .landing_page {
     width: 100vw;
-    background-image: url(/img/background_main.png);
+    background-image: url(../img/background_main.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
@@ -303,6 +303,10 @@
 
         .burger_icon:focus+.burger_nav {
             display: block;
+
+            .burger_icon {
+                visibility: hidden;
+            }
         }
 
         .burger_nav {
