@@ -185,6 +185,7 @@
 
     }
 
+
     .clouds {
         display: none;
     }
@@ -303,16 +304,17 @@
 
         .burger_icon:focus+.burger_nav {
             display: block;
+        }
 
-            .burger_icon {
-                visibility: hidden;
-            }
+        .burger_icon:focus {
+            transform: translateX(-250%);
         }
 
         .burger_nav {
             position: absolute;
             top: -175%;
             left: -115%;
+            z-index: 1;
         }
 
         .burger_menu_btn {
